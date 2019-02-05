@@ -5,9 +5,9 @@ require('class.phpmailer.php');
 require('class.smtp.php');
 $mail = new PHPMailer();
 
-    $cuerpo = "Nombre: " . $_GET["nombre"] . "\r\n"; 
-    $cuerpo .= " --- Email: " . $_GET["email"] . "\r\n";
-	$cuerpo .= " --- Consulta: " . $_GET["consulta"] . "\r\n";
+    $cuerpo = "Nombre: " . $_POST["nombre"]; 
+    $cuerpo .= " --- Email: " . $_POST["email"];
+	$cuerpo .= " --- Consulta: " . $_POST["consulta"];
 
 
 //------------------------------------------------------

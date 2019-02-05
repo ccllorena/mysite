@@ -9,7 +9,7 @@ $mail = new PHPMailer();
     $cuerpo .= " --- Email: " . $_POST["email"];
 	$cuerpo .= " --- Consulta: " . $_POST["consulta"];
 
-
+echo $cuerpo;
 //------------------------------------------------------
     $correo_destino="claudio.llorena@gmail.com"; //a que correo llega
     $nombre_destino="Claudio LLorena"; //nombre de quien recibe

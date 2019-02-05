@@ -1,6 +1,6 @@
 ﻿<?php
-require('class.phpmailer.php');
-require('class.smtp.php');
+require('/contacto/class.phpmailer.php');
+require('/contacto/class.smtp.php');
 $mail = new PHPMailer();
 
     $cuerpo = "Nombre: " . $_POST["nombre"] . "\r\n"; 

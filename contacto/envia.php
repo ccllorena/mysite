@@ -1,4 +1,5 @@
 ﻿<?php
+error_reporting(-1);
 require('class.phpmailer.php');
 require('class.smtp.php');
 $mail = new PHPMailer();

@@ -21,7 +21,7 @@ $mail = new PHPMailer();
 
 $mail->IsSMTP();
 //$mail->SMTPAuth = true;
-$mail->Host = "smtp.zoho.com";
+$mail->Host = "ssl://smtp.zoho.com";
 $mail->Port = "465";
 $mail->SMTPSecure = "ssl";
 $mail->From = $correo_emisor;
@@ -38,6 +38,7 @@ $mail->Username = "claudio@programadorinformatico.cl";
 $mail->Password = "Cplla1963*";
 
 if(!$mail->Send()) {
+echo !extension_loaded('openssl')?"Not Available":"Available";
 echo "Error enviando: " . $mail->ErrorInfo;
 } else {
 echo "¡¡Enviado!!";

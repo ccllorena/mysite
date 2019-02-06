@@ -33,7 +33,7 @@ $mail->MsgHTML($cuerpo);
 // podemos hacer varios AddAdress
 $mail->AddAddress($correo_destino, $nombre_destino);
 $mail->SMTPAuth = "true";
-$mail->SMTPDebug = 4;
+$mail->SMTPDebug = 2;
 // credenciales usuario
 $mail->Username = "claudio@programadorinformatico.cl";
 $mail->Password = "Cplla1963*";
@@ -42,6 +42,8 @@ if(!$mail->Send()) {
 echo !extension_loaded('openssl')?"Not Available: ":"Available: ";
 echo "Error enviando: " . $mail->ErrorInfo;
 } else {
-echo "¡¡Enviado!!";
+//echo "¡¡Enviado!!";
+header("Location: https://programadorinformatico.cl");
+die();
 } 
 ?>

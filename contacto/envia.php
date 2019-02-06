@@ -23,6 +23,7 @@ $mail->IsSMTP();
 //$mail->SMTPAuth = true;
 $mail->Host = "smtp.zoho.com";
 $mail->Port = "465";
+$mail->AuthType = 'LOGIN';
 $mail->SMTPSecure = "ssl";
 $mail->From = $correo_emisor;
 $mail->FromName = $nombre_emisor;

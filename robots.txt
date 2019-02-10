@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /assets/
-Disallow: /contacto/
 Disallow: /images/
-Allow: /*/css
+Allow: /*/css/
+Allow: /*/animate.css-master/

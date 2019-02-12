@@ -182,16 +182,15 @@
 									<tr align="center">
 										<td>
 											
-											<img id="myImg" class="animated bounceInLeft delay-0.5s" src="images/offroadmotos.jpg" alt="" height="160px" width="220px" alt="Offroadmotos" /><br>Offroadmotos
-											<!-- The Modal -->
-                                               
+											<img id="myImg1" class="animated bounceInLeft delay-0.5s" src="images/offroadmotos.jpg" alt="" height="160px" width="220px" alt="Offroadmotos" /><br>Offroadmotos
+
 
 										</td>
 										<td>
-											<img id="myImg" class="animated bounceInLeft delay-0.5s" src="images/servi_wario.jpg" alt="" height="160px" width="220px" /><br>Servi_wario
+											<img id="myImg2" class="animated bounceInLeft delay-0.5s" src="images/servi_wario.jpg" alt="" height="160px" width="220px" /><br>Servi_wario
 										</td>
 										<td>
-											<img id="rounded-corners" class="animated bounceInLeft delay-0.5s" src="images/aramistruck.jpg" alt="" height="160px" width="220px" /><br>AramisTruck
+											<img id="myImg3" class="animated bounceInLeft delay-0.5s" src="images/aramistruck.jpg" alt="" height="160px" width="220px" /><br>AramisTruck
 										</td>
 									</tr>
 
@@ -219,12 +218,14 @@
 										</td>
 									</tr>
 								</table>
-								               <div id="myModal" class="modal">
-                                               	<span class="closer">&times;</span>
-                                                 <img class="modal-content" id="img01">
-                                                 <div id="caption">Offroadmotos</div>
-                                               </div>
-								
+
+								<!-- The Modal -->
+                                  <div id="myModal" class="modal">
+                                  	<span class="closer">&times;</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                  </div>
+
 							</article>
 
 
@@ -505,11 +506,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 <script>
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var img = document.getElementById($(this).attr("id"));
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -525,6 +527,7 @@ var span = document.getElementsByClassName("closer")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
 </script>			
 
 	</body>
